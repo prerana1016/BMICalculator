@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <RelativeLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/centerhorizontalline"
         android:layout_centerInParent="true">
@@ -17,7 +17,7 @@
 
     <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:id="@+id/centerverticalline">
 
@@ -25,79 +25,80 @@
 
 
     <RelativeLayout
+        android:id="@+id/male"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_toStartOf="@id/centerverticalline"
-        android:background="@drawable/cardbackground"
         android:layout_above="@id/heightlayout"
-        android:layout_marginBottom="35dp"
-        android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
-        android:id="@+id/male">
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="60dp"
+        android:layout_toStartOf="@id/centerverticalline"
+        android:background="@drawable/cardbackground">
+
+        <TextView
+            android:id="@+id/textmale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="7dp"
+            android:fontFamily="@font/raleway"
+            android:text="@string/male"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold">
+
+        </TextView>
 
         <ImageView
             android:layout_width="170dp"
             android:layout_height="170dp"
             android:layout_above="@id/textmale"
-            android:layout_marginBottom="20dp"
-            android:layout_centerInParent="true"
-            android:src="@drawable/male"
-            android:contentDescription="@string/todo">
-
-        </ImageView>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="18sp"
-            android:textColor="@color/white"
-            android:text="@string/male"
-            android:id="@+id/textmale"
-            android:textStyle="bold"
-            android:fontFamily="@font/raleway"
-            android:textAlignment="center"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="10dp">
-
-        </TextView>
+            android:layout_centerVertical="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="13dp"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/male" />
 
 
     </RelativeLayout>
 
     <RelativeLayout
+        android:id="@+id/female"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_above="@id/heightlayout"
-        android:layout_marginBottom="35dp"
-        android:layout_marginRight="20dp"
-        android:layout_toEndOf="@id/centerverticalline"
-        android:background="@drawable/cardbackground"
         android:layout_marginLeft="20dp"
-        android:id="@+id/female">
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="60dp"
+        android:layout_toEndOf="@id/centerverticalline"
+        android:background="@drawable/cardbackground">
 
         <ImageView
             android:layout_width="170dp"
             android:layout_height="170dp"
-            android:layout_centerInParent="true"
             android:layout_above="@id/textfemale"
-            android:layout_marginBottom="20dp"
-            android:src="@drawable/female"
-            android:contentDescription="@string/todo">
+            android:layout_centerInParent="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="13dp"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/female">
 
         </ImageView>
 
         <TextView
+            android:id="@+id/textfemale"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
-            android:textColor="@color/white"
-            android:text="@string/femaletext"
-            android:id="@+id/textfemale"
-            android:textStyle="bold"
-            android:fontFamily="@font/raleway"
-            android:textAlignment="center"
             android:layout_alignParentBottom="true"
-            android:layout_marginBottom="10dp">
+            android:layout_marginBottom="7dp"
+            android:fontFamily="@font/raleway"
+            android:text="@string/femaletext"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold">
 
         </TextView>
 
@@ -106,40 +107,40 @@
 
 
     <RelativeLayout
+        android:id="@+id/heightlayout"
         android:layout_width="340dp"
-        android:layout_height="150dp"
+        android:layout_height="165dp"
         android:layout_above="@id/centerhorizontalline"
-        android:layout_marginBottom="-50dp"
         android:layout_centerHorizontal="true"
-        android:background="@drawable/cardbackground"
         android:layout_marginLeft="25dp"
         android:layout_marginRight="25dp"
-        android:id="@+id/heightlayout">
+        android:layout_marginBottom="-50dp"
+        android:background="@drawable/cardbackground">
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_marginTop="15dp"
-            android:textAlignment="center"
-            android:textStyle="bold"
-            android:fontFamily="@font/raleway"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/raleway"
             android:text="@string/height"
-            android:textSize="20sp">
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            android:textStyle="bold">
 
         </TextView>
 
 
         <TextView
+            android:id="@+id/currentheight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/startingheight"
-            android:layout_marginBottom="50dp"
-            android:textSize="40sp"
             android:layout_alignParentBottom="true"
-            android:textColor="@color/white"
             android:layout_centerInParent="true"
-            android:id="@+id/currentheight"
+            android:layout_marginBottom="50dp"
+            android:text="@string/startingheight"
+            android:textColor="@color/white"
+            android:textSize="50sp"
             android:textStyle="bold">
 
         </TextView>
@@ -148,77 +149,74 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/unit"
-            android:textSize="20sp"
-            android:fontFamily="@font/raleway"
-            android:textStyle="bold"
-            android:layout_toEndOf="@id/currentheight"
-            android:layout_marginStart="20dp"
             android:layout_centerInParent="true"
-            android:textColor="@color/white" />
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@id/currentheight"
+            android:fontFamily="@font/raleway"
+            android:text="@string/unit"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold" />
 
 
         <SeekBar
+            android:id="@+id/seekbarforheight"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_marginBottom="20dp"
             android:layout_marginLeft="10dp"
-            android:progressTint="#FF4C4C"
-            android:thumbTint="@color/white"
             android:layout_marginRight="10dp"
-            android:id="@+id/seekbarforheight">
+            android:layout_marginBottom="19dp"
+            android:progressTint="#FF4C4C"
+            android:thumbTint="@color/white">
 
         </SeekBar>
 
     </RelativeLayout>
 
     <android.widget.Button
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
         android:id="@+id/calculatebmi"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="15dp"
-        android:background="@drawable/buttonbackground"
-        android:text="@string/calculate_your_bmi"
-        android:textSize="15sp"
-        android:textColor="@color/white"
-        android:fontFamily="@font/raleway"
-        android:textStyle="bold"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        >
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/buttonbackground"
+        android:fontFamily="@font/raleway"
+        android:text="@string/calculate_your_bmi"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold">
 
     </android.widget.Button>
 
 
-
     <RelativeLayout
+        android:id="@+id/weight"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_toStartOf="@id/centerverticalline"
-        android:background="@drawable/cardbackground"
         android:layout_below="@id/heightlayout"
-        android:layout_marginBottom="20dp"
-        android:layout_marginTop="85dp"
         android:layout_marginLeft="20dp"
+        android:layout_marginTop="100dp"
         android:layout_marginRight="20dp"
-        android:id="@+id/weight">
-
+        android:layout_marginBottom="20dp"
+        android:layout_toStartOf="@id/centerverticalline"
+        android:background="@drawable/cardbackground">
 
 
         <TextView
+            android:id="@+id/textweight"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
-            android:textColor="@color/white"
-            android:text="@string/weight"
-            android:fontFamily="@font/raleway"
-            android:id="@+id/textweight"
             android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/raleway"
+            android:text="@string/weight"
             android:textAlignment="center"
-            android:textStyle="bold"
-            android:layout_marginBottom="10dp">
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold">
 
         </TextView>
 
@@ -241,17 +239,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_marginBottom="10dp"
             android:layout_marginStart="20dp"
-            android:background="@drawable/plusminus"
-            >
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/plusminus">
 
             <ImageView
+                android:id="@+id/decrementweight"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/minus"
-                android:id="@+id/decrementweight"
-                android:contentDescription="@string/todo">
+                android:contentDescription="@string/todo"
+                android:src="@drawable/minus">
 
             </ImageView>
 
@@ -260,20 +257,19 @@
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="10dp"
-            android:layout_marginEnd="20dp"
             android:layout_alignParentEnd="true"
-            android:background="@drawable/plusminus"
-            >
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/plusminus">
 
             <ImageView
+                android:id="@+id/incremetweight"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:id="@+id/incremetweight"
 
-                android:src="@drawable/add"
-                android:contentDescription="@string/todo">
+                android:contentDescription="@string/todo"
+                android:src="@drawable/add">
 
             </ImageView>
 
@@ -282,17 +278,16 @@
 
 
     <RelativeLayout
+        android:id="@+id/Age"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_toEndOf="@id/centerverticalline"
-        android:background="@drawable/cardbackground"
         android:layout_below="@id/heightlayout"
-        android:layout_marginBottom="20dp"
-        android:layout_marginTop="85dp"
         android:layout_marginLeft="20dp"
+        android:layout_marginTop="100dp"
         android:layout_marginRight="20dp"
-        android:id="@+id/Age">
-
+        android:layout_marginBottom="20dp"
+        android:layout_toEndOf="@id/centerverticalline"
+        android:background="@drawable/cardbackground">
 
 
         <TextView
@@ -300,14 +295,14 @@
             android:id="@+id/textage"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
-            android:textColor="@color/white"
-            android:text="@string/age"
-            android:fontFamily="@font/raleway"
             android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/raleway"
+            android:text="@string/age"
             android:textAlignment="center"
-            android:textStyle="bold"
-            android:layout_marginBottom="10dp">
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold">
 
         </TextView>
 
@@ -331,18 +326,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_marginBottom="10dp"
             android:layout_marginStart="20dp"
-            android:background="@drawable/plusminus"
-            >
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/plusminus">
 
             <ImageView
+                android:id="@+id/decrementage"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/minus"
-                android:id="@+id/decrementage"
+                android:contentDescription="@string/todo"
 
-                android:contentDescription="@string/todo">
+                android:src="@drawable/minus">
 
             </ImageView>
 
@@ -351,22 +345,22 @@
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="10dp"
-            android:layout_marginEnd="20dp"
             android:layout_alignParentEnd="true"
-            android:background="@drawable/plusminus"
-            >
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/plusminus">
 
             <ImageView
+                android:id="@+id/incrementage"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:id="@+id/incrementage"
-                android:src="@drawable/add"
-                android:contentDescription="@string/todo">
+                android:contentDescription="@string/todo"
+                android:src="@drawable/add">
 
             </ImageView>
 
         </RelativeLayout>
     </RelativeLayout>
+
 </RelativeLayout>

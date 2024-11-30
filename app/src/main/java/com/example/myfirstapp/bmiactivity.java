@@ -136,11 +136,5 @@ public class bmiactivity extends AppCompatActivity {
             startActivity(intent1);
         });
 
-
-
-
-
-
-
     }
 }

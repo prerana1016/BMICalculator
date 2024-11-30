@@ -7,26 +7,26 @@
     tools:context=".splash">
 
     <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@drawable/bmifinall"
-        android:layout_centerInParent="true"
         android:id="@+id/logo"
-        android:contentDescription="@string/Todo">
-    </ImageView>
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="80dp"
+        android:contentDescription="@string/Todo"
+        android:src="@drawable/bmifinall" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:text="@string/bmi_calculator"
-        android:layout_marginTop="30dp"
-        android:textStyle="bold"
-        android:fontFamily="@font/raleway"
-        android:textSize="20sp"
         android:layout_below="@id/logo"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/raleway"
+        android:lineSpacingExtra="2dp"
+        android:text="@string/bmi_calculator"
         android:textColor="@color/white"
-        android:lineSpacingExtra="2dp">
+        android:textSize="30sp"
+        android:textStyle="bold">
 
     </TextView>
 
